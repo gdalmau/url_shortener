@@ -66,7 +66,7 @@ Errors:
 | 412  | The provided shortcode is invalid |
 
 
-#### GET /<shortcode>
+#### GET /\<shortcode\>
 Returns HTTP status 302 with the Location header containing the URL
 
 Errors:
