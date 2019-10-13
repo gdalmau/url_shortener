@@ -3,4 +3,4 @@ python:
   - 3.6
   - 3.7
 script:
- - python -m unittest -p "*_test.py"
+ - python -m unittest tests/*.py
