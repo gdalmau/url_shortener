@@ -76,7 +76,7 @@ Errors:
 | 404  | Shortcode not found |
 
 
-#### GET /<shortcode>/stats
+#### GET /\<shortcode\>/stats
 Returns HTTP status 200 with the following body:
 
 ```json
