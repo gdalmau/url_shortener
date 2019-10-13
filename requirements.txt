@@ -1,0 +1,6 @@
+pysqlite3
+Flask
+Flask-SQLAlchemy
+Flask-Marshmallow
+Flask-RESTful
+marshmallow-sqlalchemy
