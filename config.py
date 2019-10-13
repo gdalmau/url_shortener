@@ -9,7 +9,7 @@ SHORTCODE_LENGHT = 6
 app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-sqlite_uri = 'sqlite:////' + os.path.join(basedir, 'db/sqlite.db')
+sqlite_uri = 'sqlite:////' + os.path.join(basedir, 'sqlite.db')
 config = {
     'SQLALCHEMY_DATABASE_URI': sqlite_uri,
     'SQLALCHEMY_TRACK_MODIFICATIONS': False,
