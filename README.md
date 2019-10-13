@@ -36,7 +36,7 @@ python3 -m unittest tests/api_tests.py
 # Endpoints
 
 #### POST /shorten
-The request body will have the following content:
+The request body has the following content:
 
 ```json
 {
@@ -45,8 +45,8 @@ The request body will have the following content:
 }
 ```
 
-When no shortcode provided it should create a random shortcode for the
-provided URL. The shortcode has a length of 6 characters and will contain only
+When no shortcode provided it creates a random shortcode for the
+provided URL. The shortcode has a length of 6 characters and contains only
 alphanumeric characters or underscores.
 
 Returns HTTP status 201 with the following body:
@@ -87,10 +87,10 @@ Returns HTTP status 200 with the following body:
 }
 ```
 
-`<created>` contains the creation datetime of the shortcode (in ISO8601)
-`<lastRedirect>` contains the datetime of the last usage of the shortcode (in
+- `<created>` contains the creation datetime of the shortcode (in ISO8601)
+- `<lastRedirect>` contains the datetime of the last usage of the shortcode (in
 ISO8601)
-`<redirectCount>` indicates the number of times the shortcode has been used
+- `<redirectCount>` indicates the number of times the shortcode has been used
 
 Errors:
 
