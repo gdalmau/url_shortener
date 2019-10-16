@@ -1,5 +1,5 @@
 from datetime import datetime
-from config import db, ma, SHORTCODE_LENGHT
+from url_shortener.config import db, ma, SHORTCODE_LENGHT
 
 
 class URLShortenModel(db.Model):

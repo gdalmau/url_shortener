@@ -1,5 +1,5 @@
 import re, string, random
-from config import SHORTCODE_LENGHT
+from url_shortener.config import SHORTCODE_LENGHT
 
 
 def validate_shortcode(shortcode, length=False):

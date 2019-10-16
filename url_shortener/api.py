@@ -1,8 +1,8 @@
 from flask import request, make_response, jsonify
 from flask_restful import Resource
-from models import URLShortenModel, URLShortenSchema
-from config import db, SHORTCODE_LENGHT
-from utils import validate_shortcode, generate_shortcode
+from url_shortener.models import URLShortenModel, URLShortenSchema
+from url_shortener.config import db, SHORTCODE_LENGHT
+from url_shortener.utils import validate_shortcode, generate_shortcode
 from datetime import datetime
 
 RESPONSE_MESSAGES = {
