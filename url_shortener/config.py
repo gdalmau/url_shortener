@@ -22,11 +22,11 @@ ma = Marshmallow(app)
 
 
 def configure_api(app):
-    from api import RESOURCES
+    from url_shortener.api import RESOURCES
     for resource in RESOURCES:
         api.add_resource(*resource)
 
 
 def configure_db(database):
-    import models
+    from url_shortener import models
     database.create_all()
