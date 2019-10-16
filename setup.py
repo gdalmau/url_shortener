@@ -7,7 +7,7 @@ setup(
     name='url_shortener',
     version='1.0.0',
     packages=find_packages(),
-    url='https://github.com/gdalau/url_shortener',
+    url='https://github.com/gdalmau/url_shortener',
     license='MIT',
     author='Gerard Dalmau',
     description='Webservice to shorten URLs',
