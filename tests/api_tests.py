@@ -1,6 +1,6 @@
 import unittest
 
-from utils import validate_shortcode, generate_shortcode
+from url_shortener.utils import validate_shortcode, generate_shortcode
 
 
 class UtilsTest(unittest.TestCase):
@@ -30,7 +30,7 @@ class ApiTest(unittest.TestCase):
             'SQLALCHEMY_TRACK_MODIFICATIONS': False,
             'TESTING': True,
         }
-        from config import app, db, configure_db, configure_api
+        from url_shortener.config import app, db, configure_db, configure_api
         app.config.update(config)
         cls.app = app
         cls.test_app = app.test_client()
@@ -49,7 +49,7 @@ class ApiTest(unittest.TestCase):
             self.assertEqual(resp.status_code, 404)
 
     def create_url(self, url, shortcode):
-        from api import create_shortened_url
+        from url_shortener.api import create_shortened_url
         # self.test_app.post('/shorten', data=dict(url=url, shortcode=shortcode))
         return create_shortened_url(url, shortcode)
 
